@@ -32,7 +32,7 @@ end
 local saim; saim = hookfunction(unpack, newcclosure(function(...) 
   local args = {...}
   local stack = debug.getstack(1, 1)
-  if typeof(stack[1][9]) == "CFrame" and getgenv().SilentEnabled and getgenv().Target and getgenv().Target.Head then
+  if typeof(stack[1][9]) == "CFrame" and getgenv().LPH.GG.Utility.Settings.SilentEnabled and getgenv().Target and getgenv().Target.Head then
       local targetHead = getgenv().Target.Head
       --
       if not targetHead then
